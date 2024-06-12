@@ -22,11 +22,21 @@ excerpt: "가장 빠른 실시간 뉴스를 전달하는 korea news 입니다."
   {% endfor %}
 </ul>
 
-{% if site.posts.size > 3 %}
+{% assign total_pages = site.posts.size | divided_by: 3 | plus: 1 %}
+{% if total_pages > 5 %}
 <div class="pagination">
-  {% assign total_pages = site.posts.size | divided_by: 3 | plus: 1 %}
-  {% for page in (1..total_pages) %}
+  {% assign current_page = 1 %}
+  <a href="/page{{ current_page }}/index.html">{{ current_page }}</a>
+  {% assign last_page = 5 %}
+  {% if total_pages > 5 %}
+    {% assign last_page = 5 %}
+  {% endif %}
+  {% for page in (2..last_page) %}
     <a href="/page{{ page }}/index.html">{{ page }}</a>
   {% endfor %}
+  {% if total_pages > 5 %}
+    <span>&#8594;</span>
+    <a href="/page{{ total_pages }}/index.html">&#10132;</a>
+  {% endif %}
 </div>
 {% endif %}
