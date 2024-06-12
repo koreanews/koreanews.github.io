@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Korea News
 feature_text: |
   ## Korea News
