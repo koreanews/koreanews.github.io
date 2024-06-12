@@ -97,7 +97,7 @@ lang: ko-KO # Set the site language
 title: "KoreaNews" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "한국에서 발생하는 각종 사건 사고 뉴스 기사를 누구보다 빠르게 전달하는 korea news 입니다." # Site description and default description, also used in jekyll-seo-tag
-url: "https://koreanews.github.io/" # Site url, also used in jekyll-seo-tag
+url: "https://koreanews.github.io" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/koreanews/koreanews.github.io"
 email: "blogjangsaeng@gmail.com"
@@ -130,7 +130,7 @@ navigation_header:
 
 navigation_footer:
 - title: Created by KoreaNews
-  url: https://koreanews.github.io/
+  url: https://koreanews.github.io
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
   Twitter: https://twitter.com/DavidDarnes
