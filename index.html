@@ -7,7 +7,7 @@ excerpt: "가장 빠른 실시간 뉴스를 전달하는 korea news 입니다."
 ---
 
 <ul class="post-list">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:3 %}
     <li class="post-item">
       <a href="{{ post.url }}">
         <div class="post-box">
@@ -21,3 +21,12 @@ excerpt: "가장 빠른 실시간 뉴스를 전달하는 korea news 입니다."
     </li>
   {% endfor %}
 </ul>
+
+{% if site.posts.size > 3 %}
+<div class="pagination">
+  {% assign total_pages = site.posts.size | divided_by: 3 | plus: 1 %}
+  {% for page in (1..total_pages) %}
+    <a href="/page{{ page }}/index.html">{{ page }}</a>
+  {% endfor %}
+</div>
+{% endif %}
