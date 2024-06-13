@@ -84,6 +84,7 @@ defaults:
       type: "posts"
     values:
       layout: post # Set the default layout for posts
+      toc: true # Display TOC column in posts.
   -
     scope:
       path: ""
