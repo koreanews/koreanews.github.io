@@ -1,10 +1,15 @@
 ---
+title: KoreaNews
 feature_text: |
   ## Korea News
   가장 빠른 실시간 뉴스를 전달하는 korea news 입니다.
 feature_image: "https://picsum.photos/1300/400?image=989"
 excerpt: "가장 빠른 실시간 뉴스를 전달하는 korea news 입니다."
 ---
+
+가장 빠른 실시간 뉴스를 전달하는 korea news 입니다.
+
+## 실시간 정보
 
 <ul class="post-list">
   {% for post in site.posts limit:3 %}
