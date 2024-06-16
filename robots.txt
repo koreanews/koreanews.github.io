@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://koreanews.github.io/sitemap.xml
