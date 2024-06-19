@@ -56,6 +56,15 @@
     {% if site.service_worker != false %}{% include site-sw.html %}{% endif %}
 
     {% include site-before-end.html %}
+
+  <script type="text/javascript" src="https://wcs.naver.net/wcslog.js"></script>
+  <script type="text/javascript">
+  if(!wcs_add) var wcs_add = {};
+  wcs_add["wa"] = "d9d8e6fd5f4138";
+  if(window.wcs) {
+    wcs_do();
+  }
+  </script>
   </body>
 
 </html>
